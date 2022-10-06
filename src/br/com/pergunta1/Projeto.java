@@ -4,15 +4,15 @@ public abstract class Projeto {
   private String nome;
   private String descricao;
   private String endereco;
-  private String datainicio;
-  private String datafim;
+  private String dataInicio;
+  private String dataFim;
 
-  public Projeto(String nome, String descricao, String endereco, String datainicio, String datafim) {
+  public Projeto(String nome, String descricao, String endereco, String dataInicio, String dataFim) {
     this.nome = nome;
     this.descricao = descricao;
     this.endereco = endereco;
-    this.datainicio = datainicio;
-    this.datafim = datafim;
+    this.dataInicio = dataInicio;
+    this.dataFim = dataFim;
   }
 
   public String getNome() {
@@ -39,20 +39,20 @@ public abstract class Projeto {
     this.endereco = endereco;
   }
 
-  public String getDatainicio() {
-    return datainicio;
+  public String getDataInicio() {
+    return dataInicio;
   }
 
-  public void setDatainicio(String datainicio) {
-    this.datainicio = datainicio;
+  public void setDataInicio(String dataInicio) {
+    this.dataInicio = dataInicio;
   }
 
-  public String getDatafim() {
-    return datafim;
+  public String getDataFim() {
+    return dataFim;
   }
 
-  public void setDatafim(String datafim) {
-    this.datafim = datafim;
+  public void setDataFim(String dataFim) {
+    this.dataFim = dataFim;
   }
 
   public abstract boolean validaProjeto();

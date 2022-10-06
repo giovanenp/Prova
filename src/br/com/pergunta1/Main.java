@@ -4,7 +4,7 @@ import javax.swing.JOptionPane;
 
 public class Main {
   public static void main(String[] args) {
-    String nome, descricao, endereco, datainicio, datafim;
+    String nome, descricao, endereco, dataInicio, dataFim;
     int opcao = 0;
 
     do {
@@ -13,15 +13,15 @@ public class Main {
         nome = JOptionPane.showInputDialog("Informe o nome do projeto");
         descricao = JOptionPane.showInputDialog("Informe a descrição do projeto " + nome);
         endereco = JOptionPane.showInputDialog("Informe o endereço do projeto " + nome);
-        datainicio = JOptionPane.showInputDialog("Informe a data de inicio");
-        datafim = JOptionPane.showInputDialog("Informe a data fim");
+        dataInicio = JOptionPane.showInputDialog("Informe a data de inicio");
+        dataFim = JOptionPane.showInputDialog("Informe a data fim");
 
         switch (opcao) {
           case 1:
 
             String descAlimento = JOptionPane.showInputDialog("Informe a descrição do alimento");
             int qtde = Integer.parseInt(JOptionPane.showInputDialog("Informe a quantidade"));
-            DistribuicaoAlimento distribuicaoAlimento = new DistribuicaoAlimento(nome, descricao, endereco, datainicio, datafim, descAlimento, qtde);
+            DistribuicaoAlimento distribuicaoAlimento = new DistribuicaoAlimento(nome, descricao, endereco, dataInicio, dataFim, descAlimento, qtde);
             distribuicaoAlimento.validaProjeto();
             JOptionPane.showMessageDialog(null, distribuicaoAlimento.imprimeProjeto(), "Detalhes do Cadastro",JOptionPane.INFORMATION_MESSAGE);
             break;
@@ -30,7 +30,7 @@ public class Main {
             String tipotrabalho = JOptionPane.showInputDialog("Informe o tipo de trabalho");
             int duracaoTrabalho = Integer
                 .parseInt(JOptionPane.showInputDialog("Informe duração do trablho " + tipotrabalho));
-            TrabalhoVoluntario trabalhoVoluntario = new TrabalhoVoluntario(nome, descricao, endereco, datainicio, datafim, tipotrabalho, duracaoTrabalho);
+            TrabalhoVoluntario trabalhoVoluntario = new TrabalhoVoluntario(nome, descricao, endereco, dataInicio, dataFim, tipotrabalho, duracaoTrabalho);
             trabalhoVoluntario.validaProjeto();
             JOptionPane.showMessageDialog(null, trabalhoVoluntario.imprimeProjeto(), "Detalhes do Cadastro", JOptionPane.INFORMATION_MESSAGE);
             break;

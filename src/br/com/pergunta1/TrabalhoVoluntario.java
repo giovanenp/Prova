@@ -4,9 +4,8 @@ public class TrabalhoVoluntario extends Projeto {
   private String tipoTrabalho;
   private int duracaoTrabalho;
 
-  public TrabalhoVoluntario(String nome, String descricao, String endereco, String datainicio, String datafim,
-      String tipoTrabalho, int duracaoTrabalho) {
-    super(nome, descricao, endereco, datainicio, datafim);
+  public TrabalhoVoluntario(String nome, String descricao, String endereco, String dataInicio, String dataFim, String tipoTrabalho, int duracaoTrabalho) {
+    super(nome, descricao, endereco, dataInicio, dataFim);
     this.tipoTrabalho = tipoTrabalho;
     this.duracaoTrabalho = duracaoTrabalho;
   }
@@ -38,7 +37,7 @@ public class TrabalhoVoluntario extends Projeto {
 
   @Override
   public String imprimeProjeto() {
-    return "Projeto: " + getNome() + "\nDescrição: " + getDescricao() + "\nData de inicio: " + getDatainicio() +  "\nData fim: " + getDatafim() + "\nTipo do trabalho: " + this.tipoTrabalho + "\nDuração: " + this.duracaoTrabalho;
+    return "Projeto: " + getNome() + "\nDescrição: " + getDescricao() + "\nData de inicio: " + getDataInicio() +  "\nData fim: " + getDataFim() + "\nTipo do trabalho: " + this.tipoTrabalho + "\nDuração: " + this.duracaoTrabalho;
   }
 
 }

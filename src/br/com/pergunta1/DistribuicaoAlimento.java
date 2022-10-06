@@ -4,9 +4,8 @@ public class DistribuicaoAlimento extends Projeto {
   private String descAlimento;
   private float qtde;
 
-  public DistribuicaoAlimento(String nome, String descricao, String endereco, String datainicio, String datafim,
-      String descAlimento, float qtde) {
-    super(nome, descricao, endereco, datainicio, datafim);
+  public DistribuicaoAlimento(String nome, String descricao, String endereco, String dataInicio, String dataFim, String descAlimento, float qtde) {
+    super(nome, descricao, endereco, dataInicio, dataFim);
     this.descAlimento = descAlimento;
     this.qtde = qtde;
   }
@@ -29,7 +28,7 @@ public class DistribuicaoAlimento extends Projeto {
 
   @Override
   public boolean validaProjeto() {
-    if (getDatafim() == "") {
+    if (getDataFim() == "") {
       return true;
     } else {
       return false;
@@ -38,8 +37,7 @@ public class DistribuicaoAlimento extends Projeto {
 
   @Override
   public String imprimeProjeto() {
-    return "Projeto: " + getNome() + "\nDescrição: " + getDescricao() + "\nData de Inicio: " + getDatainicio() + "\nData Fim: " + getDatafim() 
-    + "\nDescrição do Alimento: " + this.descAlimento + "\nQuantidade: " + this.qtde;
+    return "Projeto: " + getNome() + "\nDescrição: " + getDescricao() + "\nData de Inicio: " + getDataInicio() + "\nData Fim: " + getDataFim() + "\nDescrição do Alimento: " + this.descAlimento + "\nQuantidade: " + this.qtde;
   }
 
 }
