@@ -21,7 +21,11 @@ public class Main {
             String descAlimento = JOptionPane.showInputDialog("Informe a descrição do alimento");
             int qtde = Integer.parseInt(JOptionPane.showInputDialog("Informe a quantidade"));
             DistribuicaoAlimento distribuicaoAlimento = new DistribuicaoAlimento(nome, descricao, endereco, dataInicio, dataFim, descAlimento, qtde);
-            distribuicaoAlimento.validaProjeto();
+            if(distribuicaoAlimento.validaProjeto()) {
+              JOptionPane.showMessageDialog(null, "Projeto válido");
+            } else {
+              JOptionPane.showMessageDialog(null, "Projeto inválido");
+            }
             JOptionPane.showMessageDialog(null, distribuicaoAlimento.imprimeProjeto(), "Detalhes do Cadastro",JOptionPane.INFORMATION_MESSAGE);
             break;
 
@@ -29,7 +33,11 @@ public class Main {
             String tipotrabalho = JOptionPane.showInputDialog("Informe o tipo de trabalho");
             int duracaoTrabalho = Integer.parseInt(JOptionPane.showInputDialog("Informe duração do trablho " + tipotrabalho));
             TrabalhoVoluntario trabalhoVoluntario = new TrabalhoVoluntario(nome, descricao, endereco, dataInicio, dataFim, tipotrabalho, duracaoTrabalho);
-            trabalhoVoluntario.validaProjeto();
+            if(trabalhoVoluntario.validaProjeto()) {
+              JOptionPane.showMessageDialog(null, "Projeto válido");
+            } else {
+              JOptionPane.showMessageDialog(null, "Projeto inválido");
+            }
             JOptionPane.showMessageDialog(null, trabalhoVoluntario.imprimeProjeto(), "Detalhes do Cadastro", JOptionPane.INFORMATION_MESSAGE);
             break;
           default:
