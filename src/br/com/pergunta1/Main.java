@@ -4,7 +4,11 @@ import javax.swing.JOptionPane;
 
 public class Main {
   public static void main(String[] args) {
-    String nome, descricao, endereco, dataInicio, dataFim;
+    String nome;
+    String descricao; 
+    String endereco; 
+    String dataInicio; 
+    String dataFim;
     int opcao = 0;
 
     do {
