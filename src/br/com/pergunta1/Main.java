@@ -18,7 +18,6 @@ public class Main {
 
         switch (opcao) {
           case 1:
-
             String descAlimento = JOptionPane.showInputDialog("Informe a descrição do alimento");
             int qtde = Integer.parseInt(JOptionPane.showInputDialog("Informe a quantidade"));
             DistribuicaoAlimento distribuicaoAlimento = new DistribuicaoAlimento(nome, descricao, endereco, dataInicio, dataFim, descAlimento, qtde);
@@ -28,8 +27,7 @@ public class Main {
 
           case 2:
             String tipotrabalho = JOptionPane.showInputDialog("Informe o tipo de trabalho");
-            int duracaoTrabalho = Integer
-                .parseInt(JOptionPane.showInputDialog("Informe duração do trablho " + tipotrabalho));
+            int duracaoTrabalho = Integer.parseInt(JOptionPane.showInputDialog("Informe duração do trablho " + tipotrabalho));
             TrabalhoVoluntario trabalhoVoluntario = new TrabalhoVoluntario(nome, descricao, endereco, dataInicio, dataFim, tipotrabalho, duracaoTrabalho);
             trabalhoVoluntario.validaProjeto();
             JOptionPane.showMessageDialog(null, trabalhoVoluntario.imprimeProjeto(), "Detalhes do Cadastro", JOptionPane.INFORMATION_MESSAGE);
