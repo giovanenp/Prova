@@ -12,7 +12,7 @@ public class Main {
     int opcao = 0;
 
     do {
-      opcao = Integer.parseInt(JOptionPane.showInputDialog("Entre com a opção desejada: \n<1> Cadastrar Projeto Distribuir Alimentos \n<2> Cadastrar Projeto Trabalho Voluntário \n<3> Sair"));
+      opcao = Integer.parseInt(JOptionPane.showInputDialog("<1> Cadastrar Projeto Distribuir Alimentos \n<2> Cadastrar Projeto Trabalho Voluntário \n<3> Sair"));
       if (opcao != 3) {
         projeto = JOptionPane.showInputDialog("Informe o nome do projeto");
         descricao = JOptionPane.showInputDialog("Informe a descrição do projeto " + projeto);
